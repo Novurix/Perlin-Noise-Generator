@@ -5,3 +5,6 @@ This code creates 2D perlin noise
 
 # New Update: 
 - new branch: Visual-Perlin-Noise allows you to actually see the perlin noise
+
+# Ignore
+using the branch: Visual-Perlin-Noise, the <a>PerlinNoiseGenerator.cs</a> is not officially apart of this branch.
