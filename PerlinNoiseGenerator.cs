@@ -14,9 +14,9 @@ namespace PerlinNoise
             int areaIndex = 0;
             area = new float[scale * scale];
 
-            for (int y = 0; y < scale; y++)
+            for (int collum = 0; collum < scale; collum++)
             {
-                for (int x = 0; x < scale; x++) {
+                for (int row = 0; row < scale; row++) {
                     Random random = new Random();
 
                     float randomIndex = random.Next(0, 10);
@@ -43,10 +43,10 @@ namespace PerlinNoise
                 }
             }
             int mappingIndex = 0;
-            for (int y = 0; y < scale; y++)
+            for (int collum = 0; collum < scale; collum++)
             {
                 string perlinIndexMapping = "";
-                for (int x = 0; x < scale; x++)
+                for (int row = 0; row < scale; row++)
                 {
                     if (area[mappingIndex] < 0) area[mappingIndex] *= -1;
 
